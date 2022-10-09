@@ -7,6 +7,8 @@
  * relevant readings for each task.
  */
 
+import java.util.Arrays;
+
 /**
  *  1. In Java, no code can exist outside of a class. Unlike Python which uses
  *    functions, all code in Java uses methods.
@@ -143,17 +145,15 @@ public class Basics {
          *                separated by spaces, so no loops are required, though
          *                you may use them if you wish.
          */
-        StringBuilder ret = new StringBuilder();
+        String ret = "";
 
         // Fill in the rest of the body here
 
         String[] newString = to_split.split(" ");
         for (String newStr : newString) {
-            ret.append(newStr.charAt(0));
-
+            ret += newStr.charAt(0);
         }
-
-        return ret.toString();
+        return ret;
     }
 
 
